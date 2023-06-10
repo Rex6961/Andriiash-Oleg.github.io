@@ -1,0 +1,223 @@
+@font-face {
+    src: url('fonts/AbrilFatface-Regular.ttf');
+    font-family: 'Abril Fatface';
+}
+
+body {
+    font-family: Cardo, 'Abril Fatface', -apple-system, "Segoe UI", Roboto,
+    Arial, serif;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0.3) 90%);
+    aspect-ratio: auto;
+    overflow: auto;
+}
+
+.grid-wrapper .item {
+    margin: 0;
+    font-family: Cardo, 'Abril Fatface', -apple-system, "Segoe UI",
+    Roboto, Arial, serif;
+}
+
+.header {
+    margin: 2vh;
+    text-align: center;
+    color: #cedfe9;
+}
+
+.header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    line-height: 1;
+}
+
+.header h1 {
+    position: relative;
+    padding-bottom: 0.5em;
+    color: #ffffff;
+    font-size: 5vw;
+}
+
+.grid-wrapper .text {
+    margin: 0;
+    letter-spacing: 0.2em;
+    line-height: 1;
+}
+
+.grid-wrapper .text {
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    color: #070707;
+    font-size: 1.5vw;
+}
+
+.grid-wrapper .header-text {
+    text-align: center;
+    color: rgba(26, 26, 26, 0.55);
+    font-size: 2vw;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(37%, 3fr) minmax(59%, 6fr));
+    grid-template-rows: auto;
+    padding: 1vw 2vw;
+    grid-gap: 1vw;
+    grid-column-gap: 5vw;
+}
+
+.grid-wrapper .item .grid-item img {
+    padding-top: 5px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.grid-wrapper .item:nth-child(1) {background-image: url("images/grey-smoke.jpg")}
+
+.grid-wrapper .item:nth-child(1) {
+    width: 100%;
+}
+
+.grid-wrapper .grid-item {
+    border: 3px double #000000;
+    border-radius: 2%;
+    min-height: 10vw;
+}
+
+.grid-wrapper .item {
+    width: 100%;
+    border-radius: 2%;
+}
+
+.grid-wrapper .item:nth-child(3) .grid-item {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 70% 30%;
+    grid-column-gap: 1px;
+}
+
+.grid-wrapper .item:nth-child(3) .grid-item{
+    height: 98%;
+}
+
+.map {
+    margin: 0;
+    width: 80%;
+}
+
+.area {
+    margin: 0;
+    width: 80%;
+}
+
+.telephone {
+    margin: auto;
+    width: 80%;
+}
+.telephone-number {
+}
+
+.grid-wrapper .item:nth-child(5) .grid-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 2fr) minmax(80%, 8fr));
+    grid-template-rows: auto;
+    grid-column-gap: 1px;
+}
+
+.mail-png {
+    margin: auto;
+    width: 80%;
+    padding-left: 0.5rem;
+}
+
+.github-png {
+    margin: auto;
+    width: 120%;
+}
+
+.github {
+    margin: auto;
+}
+
+.telegram {
+    margin: auto;
+    padding-top: 2rem;
+    padding-left: 0.5rem;
+    width: 80%;
+}
+
+.nick-telegram {
+    margin: auto;
+    padding-top: 2rem;
+    padding-left: 20%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 499px) {
+    .grid-wrapper {
+        grid-template-columns: 101%;
+        grid-template-rows: auto;
+    }
+    .grid-wrapper .item:nth-child(1){order: -1}
+    .grid-wrapper .item:nth-child(2){order:0}
+    .grid-wrapper .item:nth-child(3){order:1}
+    .grid-wrapper .item:nth-child(4){order: 0}
+    .grid-wrapper .item:nth-child(5){order: 1}
+    .grid-wrapper .item:nth-child(6){order: 0}
+    .grid-wrapper .item:nth-child(1) {
+        width: 100%;
+    }
+    .grid-wrapper .item:nth-child(3) .grid-item {
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 65% 25%;
+    }
+    .map {
+        margin: auto;
+        width: 30%;
+    }
+
+    .area {
+        margin: auto;
+        padding-right: 3rem;
+        width: 35%;
+    }
+    .telephone {
+        margin: auto;
+        padding-bottom: 3rem;
+        width: 30%;
+    }
+
+    .telephone-number {
+        margin: auto;
+        padding-right: 3rem;
+    }
+
+    .mail-png {
+         margin: auto;
+         width: 40px;
+         padding-left: 1rem;
+     }
+
+    .github-png {
+        margin: auto;
+        padding-left: 1rem;
+        width: 50%;
+    }
+
+    .github {
+        margin: auto;
+    }
+    .telegram {
+        margin: auto;
+        padding-top: 10%;
+        padding-left: 3vh;
+        width: 35%;
+    }
+    .nick-telegram {
+        margin: auto;
+        padding-top: 10px;
+        padding-left: .1rem;
+    }
+}
