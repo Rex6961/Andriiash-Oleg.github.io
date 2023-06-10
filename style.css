@@ -220,4 +220,20 @@ body {
         padding-top: 10px;
         padding-left: .1rem;
     }
+    .grid-wrapper .text {
+        margin: 0;
+        letter-spacing: 0.2em;
+        line-height: 1;
+    }
+    .grid-wrapper .text {
+        padding-left: 1em;
+        padding-bottom: 0.5em;
+        color: #070707;
+        font-size: 4.5vw;
+    }
+    .grid-wrapper .header-text {
+        text-align: center;
+        color: rgba(26, 26, 26, 0.55);
+        font-size: 6vw;
+    }
 }
